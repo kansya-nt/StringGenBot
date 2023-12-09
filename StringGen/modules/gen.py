@@ -191,14 +191,14 @@ async def gen_session(
         try:
             pwd = await Anony.ask(
                 identifier=(message.chat.id, user_id, None),
-                text="» ᴘʟᴇᴀsᴇ ᴇɴᴛᴇʀ ʏᴏᴜʀ ᴛᴡᴏ sᴛᴇᴘ ᴠᴇʀɪғɪᴄᴀᴛɪᴏɴ ᴘᴀssᴡᴏʀᴅ ᴛᴏ ᴄᴏɴᴛɪɴᴜᴇ :",
+                text="» ᴋɪʀɪᴍ ᴘᴀssᴡᴏʀᴅ ᴠ2ʟ ɴʏᴀ ᴍᴇᴋ ᴊᴀɴ ʟᴀᴍᴀ :",
                 filters=filters.text,
                 timeout=300,
             )
         except ListenerTimeout:
             return Anony.send_message(
                 user_id,
-                "» ᴛɪᴍᴇᴅ ʟɪᴍɪᴛ ʀᴇᴀᴄʜᴇᴅ ᴏғ 5 ᴍɪɴᴜᴛᴇs.\n\nᴘʟᴇᴀsᴇ sᴛᴀʀᴛ ɢᴇɴᴇʀᴀᴛɪɴɢ sᴇssɪᴏɴ ᴀɢᴀɪɴ.",
+                "» ʙᴀᴛᴀs ᴡᴀᴋᴛᴜ ʟᴜ ᴜᴅᴀʜ ʜᴀʙɪs ᴋᴀᴋ. \n\nᴄᴏʙᴀ sᴛᴀʀᴛ ʟᴀɢɪ.",
                 reply_markup=retry_key,
             )
 
@@ -214,7 +214,7 @@ async def gen_session(
         except (PasswordHashInvalid, PasswordHashInvalidError, PasswordHashInvalid1):
             return await Anony.send_message(
                 user_id,
-                "» ᴛʜᴇ ᴩᴀssᴡᴏʀᴅ ʏᴏᴜ'ᴠᴇ sᴇɴᴛ ɪs ᴡʀᴏɴɢ.\n\nᴩʟᴇᴀsᴇ sᴛᴀʀᴛ ɢᴇɴᴇʀᴀᴛɪɴɢ ʏᴏᴜʀ sᴇssɪᴏɴ ᴀɢᴀɪɴ.",
+                "» ᴘᴀssᴡᴏʀᴅ ʟᴜ sᴀʟᴀʜ ɢᴏʙʟᴏᴋ, ʏᴀɴɢ ʙᴇɴᴇʀ ɴᴀᴘᴀ.\n\nᴄᴏʙᴀ sᴛᴀʀᴛ ʟᴀɢɪ.",
                 reply_markup=retry_key,
             )
 
@@ -222,7 +222,7 @@ async def gen_session(
         return await Anony.send_message(user_id, f"ᴇʀʀᴏʀ : <code>{str(ex)}</code>")
 
     try:
-        txt = "ʜᴇʀᴇ ɪs ʏᴏᴜʀ {0} sᴛʀɪɴɢ sᴇssɪᴏɴ\n\n<code>{1}</code>\n\nᴀ sᴛʀɪɴɢ ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴏᴛ ʙʏ <a href={2}>ғᴀʟʟᴇɴ ᴀssᴏᴄɪᴀᴛɪᴏɴ</a>\n☠ <b>ɴᴏᴛᴇ :</b> ᴅᴏɴ'ᴛ sʜᴀʀᴇ ɪᴛ ᴡɪᴛʜ ʏᴏᴜʀ ɢɪʀʟғʀɪᴇɴᴅ."
+        txt = "ɴɪʜ ᴍᴇᴋ {0} sᴛʀɪɴɢ sᴇssɪᴏɴ\n\n<code>{1}</code>\n\nᴀ sᴛʀɪɴɢ ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴏᴛ ʙʏ <a href={2}>ʙᴇꝛʟɪɴ sᴛʀɪɴɢ ɢᴇɴ</a>\n☠ <b>ɴᴏᴛᴇ :</b> ᴊᴀɴ ʟᴜ sʜᴀʀᴇ ᴋᴇ sɪᴀᴘᴀ ʏᴀ ᴀɴᴊɪɴɢ."
         if telethon:
             string_session = client.session.save()
             await client.send_message(
@@ -231,7 +231,7 @@ async def gen_session(
                 link_preview=False,
                 parse_mode="html",
             )
-            await client(JoinChannelRequest("@FallenAssociation"))
+            await client(JoinChannelRequest("@Berlinmusic_support"))
         else:
             string_session = await client.export_session_string()
             await client.send_message(
@@ -239,19 +239,19 @@ async def gen_session(
                 txt.format(ty, string_session, SUPPORT_CHAT),
                 disable_web_page_preview=True,
             )
-            await client.join_chat("FallenAssociation")
+            await client.join_chat("Berlinmidnight")
     except KeyError:
         pass
     try:
         await client.disconnect()
         await Anony.send_message(
             chat_id=user_id,
-            text=f"sᴜᴄᴄᴇssғᴜʟʟʏ ɢᴇɴᴇʀᴀᴛᴇᴅ ʏᴏᴜʀ {ty} sᴛʀɪɴɢ sᴇssɪᴏɴ.\n\nᴘʟᴇᴀsᴇ ᴄʜᴇᴄᴋ ʏᴏᴜʀ sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs ғᴏʀ ɢᴇᴛᴛɪɴɢ ɪᴛ.\n\nᴀ sᴛʀɪɴɢ ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴏᴛ ʙʏ <a href={SUPPORT_CHAT}>ғᴀʟʟᴇɴ ᴀssᴏᴄɪᴀᴛɪᴏɴ</a>.",
+            text=f"{ty} ᴅᴀʜ ᴊᴀᴅɪ ʏᴀʜ ᴘᴜᴋɪᴍᴀᴋ.\n\nᴄᴏʙᴀ ᴄᴇᴋ ᴘᴇsᴀɴ ᴛᴇʀsɪᴍᴘᴀɴ ʟᴜ ʏᴀɴɢ ʙᴀɴʏᴀᴋ ʙᴏᴋᴇᴘ ɴʏᴀ.\n\nᴍɪɴɪᴍᴀʟ ʙɪʟᴀɴɢ ʜᴀᴛᴜʀ ɴᴜʜᴜɴ ʙᴀʙɪ ᴋᴇ <a href={SUPPORT_CHAT}>Berlinmidnight</a>.",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs",
+                            text="ᴘᴇsᴀɴ ᴛᴇʀsɪᴍᴘᴀɴ",
                             url=f"tg://openmessage?user_id={user_id}",
                         )
                     ]
@@ -266,17 +266,17 @@ async def gen_session(
 async def cancelled(message):
     if "/cancel" in message.text:
         await message.reply_text(
-            "» ᴄᴀɴᴄᴇʟʟᴇᴅ ᴛʜᴇ ᴏɴɢᴏɪɴɢ sᴛʀɪɴɢ ɢᴇɴᴇʀᴀᴛɪᴏɴ ᴩʀᴏᴄᴇss.", reply_markup=retry_key
+            "» ᴘʀᴏsᴇs ᴍᴇᴍʙᴀᴛᴀʟᴋᴀɴ ᴘᴇɴɢᴀᴍʙɪʟᴀɴ sᴛʀɪɴɢ.", reply_markup=retry_key
         )
         return True
     elif "/restart" in message.text:
         await message.reply_text(
-            "» sᴜᴄᴄᴇssғᴜʟʟʏ ʀᴇsᴛᴀʀᴛᴇᴅ ᴛʜɪs ʙᴏᴛ.", reply_markup=retry_key
+            "» ʙᴇʀʜᴀsɪʟ ᴍᴇʀᴇsᴛᴀʀᴛ ʙᴏᴛ.", reply_markup=retry_key
         )
         return True
     elif message.text.startswith("/"):
         await message.reply_text(
-            "» ᴄᴀɴᴄᴇʟʟᴇᴅ ᴛʜᴇ ᴏɴɢᴏɪɴɢ sᴛʀɪɴɢ ɢᴇɴᴇʀᴀᴛɪᴏɴ ᴩʀᴏᴄᴇss.", reply_markup=retry_key
+            "» ᴘʀᴏsᴇs ᴍᴇᴍʙᴀᴛᴀʟᴋᴀɴ ᴘᴇɴɢᴀᴍʙɪʟᴀɴ sᴛʀɪɴɢ.", reply_markup=retry_key
         )
         return True
     else:
