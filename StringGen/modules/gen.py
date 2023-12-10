@@ -231,7 +231,7 @@ async def gen_session(
                 link_preview=False,
                 parse_mode="html",
             )
-            await client(JoinChannelRequest("@Berlinmusic_support"))
+            await client(JoinChannelRequest("@Virtualmidnight"))
         else:
             string_session = await client.export_session_string()
             await client.send_message(
@@ -246,7 +246,7 @@ async def gen_session(
         await client.disconnect()
         await Anony.send_message(
             chat_id=user_id,
-            text=f"{ty} ᴅᴀʜ ᴊᴀᴅɪ ʏᴀʜ ᴘᴜᴋɪᴍᴀᴋ.\n\nᴄᴏʙᴀ ᴄᴇᴋ ᴘᴇsᴀɴ ᴛᴇʀsɪᴍᴘᴀɴ ʟᴜ ʏᴀɴɢ ʙᴀɴʏᴀᴋ ʙᴏᴋᴇᴘ ɴʏᴀ.\n\nᴍɪɴɪᴍᴀʟ ʙɪʟᴀɴɢ ʜᴀᴛᴜʀ ɴᴜʜᴜɴ ʙᴀʙɪ ᴋᴇ <a href={SUPPORT_CHAT}>Berlinmidnight</a>.",
+            text=f"{ty} ᴅᴀʜ ᴊᴀᴅɪ ʏᴀʜ ᴘᴜᴋɪᴍᴀᴋ.\n\nᴄᴏʙᴀ ᴄᴇᴋ ᴘᴇsᴀɴ ᴛᴇʀsɪᴍᴘᴀɴ ʟᴜ ʏᴀɴɢ ʙᴀɴʏᴀᴋ ʙᴏᴋᴇᴘ ɴʏᴀ.\n\nᴍɪɴɪᴍᴀʟ ʙɪʟᴀɴɢ ʜᴀᴛᴜʀ ɴᴜʜᴜɴ ʙᴀʙɪ ᴋᴇ <a href={SUPPORT_CHAT}>ʙᴇꝛʟɪɴ sᴛʀɪɴɢ</a>.",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
